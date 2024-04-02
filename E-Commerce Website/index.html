@@ -44,9 +44,11 @@
     <div>
       <ul id="navbar">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Men.html">Male</a></li>
+        <li><a href="Women.html">Female</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="advertisement.html">Advertize</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li id="lg-bag"><a href="cart.html"><i class="bi bi-cart"></i></a></li>
         <a href="#" id="close"><i class="bi bi-x-lg"></i></a>
@@ -69,9 +71,9 @@
         <div class="col">
           <h4>Trade-in-offer</h4>
           <h2>Super value deals</h2>
-          <h1>On all products</h1>
+          <h1>On Men products</h1>
           <p>Save more coupons & up to 70% off!</p>
-          <button>Shop Now</button>
+          <button><a href="Men.html" style="text-decoration: none;">Shop Now</a></button>
         </div>
       </div>
 
@@ -79,29 +81,29 @@
         <div class="col">
           <h4>Trade-in-offer</h4>
           <h2>Super value deals</h2>
-          <h1>On all products</h1>
+          <h1>On Women products</h1>
           <p>Save more coupons & up to 70% off!</p>
-          <button>Shop Now</button>
+          <button><a href="Women.html" style="text-decoration: none;">Shop Now</a></button>
         </div>
       </div>
 
       <div class="item3" id="">
         <div class="col">
-          <h4>Trade-in-offer</h4>
-          <h2>Super value deals</h2>
-          <h1>On all products</h1>
-          <p>Save more coupons & up to 70% off!</p>
-          <button>Shop Now</button>
+          <h4 style="color: brown;"> // // // </h4>
+          <h2>Looking for something specific??</h2>
+          <h1>Visit our Gallery</h1>
+          <h4 style="color: brown;"> \\ \\ \\ </h4>
+          <button><a href="gallery.html" style="text-decoration: none;">Gallery</a></button>
         </div>
       </div>
 
       <div class="item4" id="">
         <div class="col">
-          <h4>Trade-in-offer</h4>
-          <h2>Super value deals</h2>
-          <h1>On all products</h1>
-          <p>Save more coupons & up to 70% off!</p>
-          <button>Shop Now</button>
+          <h4>Not Satisfied with your order</h4>
+          <h2>Need help with placing an order</h2>
+          <h1>Or anything Else</h1>
+          <p>Contact Us!</p>
+          <button><a href="contact.html" style="text-decoration: none;">Contact Us</a></button>
         </div>
       </div>
 
@@ -111,44 +113,9 @@
   </section>
   <!-- End Hero -->
 
-  <!-- feature starts -->
-  <section id="feature" class="section-p1">
-    <div class="card">
-      <img src="images/watch1.jpg" alt="">
-      <h6>Free shipping</h6>
-    </div>
-
-    <div class="card">
-      <img src="images/watch1.jpg" alt="">
-      <h6>Free shipping</h6>
-    </div>
-
-    <div class="card">
-      <img src="images/watch1.jpg" alt="">
-      <h6>Free shipping</h6>
-    </div>
-
-    <div class="card">
-      <img src="images/watch1.jpg" alt="">
-      <h6>Free shipping</h6>
-    </div>
-
-    <div class="card">
-      <img src="images/watch1.jpg" alt=""">
-      <h6>Free shipping</h6>
-    </div>
-
-    <div class="card">
-      <img src="images/watch1.jpg" alt="">
-      <h6>Free shipping</h6>
-    </div>
-  </section>
-  <!-- feature ends -->
-
-
   <section id="product1" class="section-p1">
     <h2>Featured Products</h2>
-    <p>summer collection New Modern Design</p>
+    <p>Summer collection New Modern Design</p>
 
     <div class="pro-container">
       <div class="pro">
@@ -299,7 +266,7 @@
 
   <section id="product1" class="section-p1">
     <h2>New Arrivals</h2>
-    <p>summer collection New Modern Design</p>
+    <p>Summer collection New Modern Design</p>
 
     <div class="pro-container">
       <div class="pro">
@@ -549,21 +516,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Carousel Navbar -->
-  <script>
+<script>
     $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+            navigation : true, // Show navigation buttons (prev/next)
+            slideSpeed : 300, // Transition speed in milliseconds
+            paginationSpeed : 400, // Pagination transition speed in milliseconds
+            items : 1, // Number of items to display per slide
+            autoplay: true, // Enable autoplay
+            autoplayTimeout: 5000, // Autoplay interval in milliseconds (5 seconds)
+            autoplayHoverPause: true, // Pause autoplay on hover
+            loop: true, // Enable continuous looping
+            itemsDesktop : false, // Number of items displayed on desktop view
+            itemsDesktopSmall : false, // Number of items displayed on small desktop view
+            itemsTablet: false, // Number of items displayed on tablet view
+            itemsMobile : false, // Number of items displayed on mobile view
+        });
+    });
+</script>
 
-$("#owl-demo").owlCarousel({
-
-    navigation : true, // Show next and prev buttons
-    slideSpeed : 300,
-    paginationSpeed : 400,
-    items : 1,
-    itemsDesktop : false,
-    itemsDesktopSmall : false,
-    itemsTablet: false,
-    itemsMobile : false,
-});
-});
-  </script>
 </body>
 </html>
